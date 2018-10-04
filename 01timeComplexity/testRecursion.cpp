@@ -15,7 +15,7 @@ int fibonacci(int n){
 // sorted array
 int binarySearch( int num, int * arr , int size, int start, int end ){
 	assert(size > 0 && start >=0 && end <size);
-	int mid = (start+end)/2;
+	int mid = (start+end)/2;    // mid = start + (end-start)/2 ;   avid overflow int
 	if(start > end){
 		return -1;
 	}else if( arr[mid] == num){
